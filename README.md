@@ -47,7 +47,7 @@ This project analyzes the UK-based online retail dataset from 2010-2011. The goa
 
 ### 5. Price Distribution
 
-- Filtered `TotalPrice` values below the 80th percentile using `scipy.stats.norm`.
+- Filtered `TotalPrice` values below the 80th percentile using `np.percentile`.
 - Visualized price distribution with histogram.
 
 ---
@@ -58,6 +58,4 @@ This project analyzes the UK-based online retail dataset from 2010-2011. The goa
 - **Matplotlib / Seaborn**: Visualizations
 - **NumPy / SciPy**: Statistical filtering
 - **Jupyter Notebook**: Interactive analysis
-
----
 
