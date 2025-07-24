@@ -8,7 +8,7 @@ This multi-notebook project provides an in-depth analysis of a UK-based online r
 
 This project is organized into several Jupyter Notebooks, each focusing on a distinct phase of the data analysis and modeling pipeline:
 
-1.  **`1_sales_insights_from_online_retail_data.ipynb`**: Focuses on initial data understanding, cleaning, and creating new features.
+1.  [1_sales_insights_from_online_retail_data.ipynb] (notebooks/Sales-Insights-from-Online-Retail-Data.ipynb): Focuses on initial data understanding, cleaning, and creating new features.
 2.  **`2_sales_insights_from_online_retail_Stats.ipynb`**: Conducts rigorous statistical tests to validate observations and uncover significant differences in key business metrics.
 3.  **`3_Data_Pipeline_and_Preparation.ipynb`**: (Future Notebook) Details the construction of a robust data pipeline for preprocessing and feature engineering.
 4.  **`4_Customer_Segmentation_and_Modeling.ipynb`**: (Future Notebook) Explores machine learning models for customer segmentation or predictive analytics.
