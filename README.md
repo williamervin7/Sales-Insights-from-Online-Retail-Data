@@ -57,7 +57,7 @@ This notebook validates initial observations and explores deeper relationships u
 ### 2. Revenue by Country
 
 -   Compared average revenue across different countries to identify regional performance variations.
--   ** Methodology** Utilized **Kruskal-Wallis H-test** (as ANOVA assumptions were violated) to compare means across multiple groups.
+-   **Methodology** Utilized **Kruskal-Wallis H-test** (as ANOVA assumptions were violated) to compare means across multiple groups.
 -   **Conclusion** There is a statistically significant difference in median LogRevenue among the countries (p < 0.05) with a Test Statistic of: 17927.7304
 
 ### 3. Revenue Distribution via Bootstrapping
