@@ -8,8 +8,8 @@ This multi-notebook project provides an in-depth analysis of a UK-based online r
 
 This project is organized into several Jupyter Notebooks, each focusing on a distinct phase of the data analysis and modeling pipeline:
 
-1.  **`1_EDA_and_Feature_Engineering.ipynb`**: Focuses on initial data understanding, cleaning, and creating new features.
-2.  **`2_Statistical_Analysis_and_Hypothesis_Testing.ipynb`**: Conducts rigorous statistical tests to validate observations and uncover significant differences in key business metrics.
+1.  **`1_sales_insights_from_online_retail_data.ipynb`**: Focuses on initial data understanding, cleaning, and creating new features.
+2.  **`2_sales_insights_from_online_retail_Stats.ipynb`**: Conducts rigorous statistical tests to validate observations and uncover significant differences in key business metrics.
 3.  **`3_Data_Pipeline_and_Preparation.ipynb`**: (Future Notebook) Details the construction of a robust data pipeline for preprocessing and feature engineering.
 4.  **`4_Customer_Segmentation_and_Modeling.ipynb`**: (Future Notebook) Explores machine learning models for customer segmentation or predictive analytics.
 
@@ -23,7 +23,7 @@ This project is organized into several Jupyter Notebooks, each focusing on a dis
 
 ---
 
-## 🛠️ Data Preprocessing & Feature Engineering (from `1_EDA_and_Feature_Engineering.ipynb`)
+## 🛠️ Data Preprocessing & Feature Engineering (from `sales_insights_from_online_retail_data.ipynb`)
 
 Initial data preparation and creation of new analytical features:
 
@@ -35,7 +35,7 @@ Initial data preparation and creation of new analytical features:
 
 ---
 
-## 📈 Key Insights & Statistical Findings (from `2_Statistical_Analysis_and_Hypothesis_Testing.ipynb`)
+## 📈 Key Insights & Statistical Findings (from `2_sales_insights_from_online_retail_Stats.ipynb`)
 
 This notebook validates initial observations and explores deeper relationships using rigorous statistical methods.
 
@@ -46,23 +46,26 @@ This notebook validates initial observations and explores deeper relationships u
 -   **Statistical Tests**:
     * **Hypothesis: Weekend vs. Weekday Revenue**: Investigated if average transaction revenue differs between weekends and weekdays.
         * **Methodology**: Independent two-sample t-test (Student's or **Welch's, based on Levene's Test for equal variances**).
-        * **Key Finding**: [Briefly state your finding here, e.g., "Found a statistically significant (p < 0.001) but practically small (Cohen's d = -0.21) difference, with weekday transactions having slightly higher average revenue."].
+        * **Key Finding**: Found a statistically significant (p < 0.001) but practically small (Cohen's d = 0.21) difference, with weekday transactions having slightly higher average revenue.
     * **Hypothesis: Top Customers vs. Other Customers (Revenue)**: Compared the average transaction revenue of top-tier customers against others.
         * **Methodology**: Independent two-sample t-test (with variance check).
-        * **Key Finding**: [Briefly state your finding here, e.g., "Confirmed Top Customers have significantly higher average transaction revenue (p < 0.001) with a substantial effect size (Cohen's d = X.XX)."].
+        * **Key Finding**: Confirmed Top Customers have significantly higher average transaction revenue (p < 0.001) with a substantial effect size (Cohen's d = 0.2114).
     * **Hypothesis: Top Customers vs. Other Customers (Purchase Frequency)**: Assessed if top customers have higher purchase frequencies.
         * **Methodology**: Independent two-sample t-test (with variance check).
-        * **Key Finding**: [Briefly state your finding here, e.g., "Identified a highly significant difference (p < 0.001) and large effect (Cohen's d = X.XX), indicating Top Customers purchase much more frequently."].
+        * **Key Finding**: Identified a highly significant difference (p < 0.001) and small effect (Cohen's d = 0.2114), indicating Top Customers purchase more frequently.
 
-### 2. Revenue by Country (Planned)
+### 2. Revenue by Country
 
--   **(Future Insight)** Will compare average revenue across different countries to identify regional performance variations.
--   **(Future Methodology)** Will utilize **ANOVA** (Analysis of Variance) or **Kruskal-Wallis H-test** (if ANOVA assumptions are violated) to compare means across multiple groups.
+-   Compared average revenue across different countries to identify regional performance variations.
+-   ** Methodology** Utilized **Kruskal-Wallis H-test** (as ANOVA assumptions were violated) to compare means across multiple groups.
+-   **Conclusion** There is a statistically significant difference in median LogRevenue among the countries (p < 0.05) with a Test Statistic of: 17927.7304
 
-### 3. Revenue Distribution via Bootstrapping (Planned)
+### 3. Revenue Distribution via Bootstrapping
 
--   **(Future Insight)** Will explore the sampling distribution of key revenue metrics to understand their variability and construct non-parametric confidence intervals.
--   **(Future Methodology)** Will apply **Bootstrapping** to simulate sampling distributions and derive robust confidence intervals without strong distributional assumptions.
+-   Explored the sampling distribution of key revenue metrics to understand their variability and construct non-parametric confidence intervals.
+-   **Methodology** Applied **Bootstrapping** to simulate sampling distributions and derive robust confidence intervals without strong distributional assumptions.
+-   **Key Findings** There is no statistically significant evidence that the average revenue per transaction is different from the overall observed mean.
+-   The hypothesized mean revenue of 22.40 falls within the 95% confidence interval.
 
 ---
 
