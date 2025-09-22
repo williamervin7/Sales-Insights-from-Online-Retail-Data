@@ -96,7 +96,7 @@ A combination of plots to illustrate data distributions and test results:
 -   Building a robust, automated data preprocessing pipeline.
 -   Time series forecasting for sales trends.
 
--   ## 🔑 Executive Summary  
+  ## 🔑 Executive Summary  
 
 - **Weekday vs. Weekend Sales**  
   Weekday transactions had slightly higher average revenue, statistically significant (**p < 0.001**) but with a small effect size.  
@@ -109,5 +109,6 @@ A combination of plots to illustrate data distributions and test results:
 
 - **Revenue Distribution**  
   Revenue was highly skewed; log transformation and bootstrapping confirmed robustness of findings and confidence intervals.  
+
 
 
