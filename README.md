@@ -10,8 +10,6 @@ This project is organized into several Jupyter Notebooks, each focusing on a dis
 
 1.  [1_sales_insights_from_online_retail_data.ipynb](notebooks/sales_insights_from_online_retail_data.ipynb): Focuses on initial data understanding, cleaning, and creating new features.
 2.  [2_sales_insights_from_online_retail_Stats.ipynb](notebooks/2_Sales_Insights_from_Online_Retail_Stats.ipynb): Conducts rigorous statistical tests to validate observations and uncover significant differences in key business metrics.
-3.  **`3_Data_Pipeline_and_Preparation.ipynb`**: (Future Notebook) Details the construction of a robust data pipeline for preprocessing and feature engineering.
-4.  **`4_Customer_Segmentation_and_Modeling.ipynb`**: (Future Notebook) Explores machine learning models for customer segmentation or predictive analytics.
 
 ---
 
@@ -97,3 +95,19 @@ A combination of plots to illustrate data distributions and test results:
 -   Predictive modeling for customer lifetime value (CLV) or churn.
 -   Building a robust, automated data preprocessing pipeline.
 -   Time series forecasting for sales trends.
+
+-   ## 🔑 Executive Summary  
+
+- **Weekday vs. Weekend Sales**  
+  Weekday transactions had slightly higher average revenue, statistically significant (**p < 0.001**) but with a small effect size.  
+
+- **Customer Segmentation**  
+  Top-tier customers generated significantly higher revenue and purchased more frequently than other customers.  
+
+- **Geographic Insights**  
+  Statistically significant differences in median transaction revenue were found across countries.  
+
+- **Revenue Distribution**  
+  Revenue was highly skewed; log transformation and bootstrapping confirmed robustness of findings and confidence intervals.  
+
+
